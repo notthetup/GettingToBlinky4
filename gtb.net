@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/chinmay/Documents/Personal/Projects/GettingToBlinky4/gtb.sch)
-    (date "2016 May 29, Sunday 20:06:03")
+    (date "2016 July 20, Wednesday 22:38:16")
     (tool "Eeschema 4.0.2-stable")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -16,7 +16,7 @@
         (comment (number 4) (value "")))))
   (components
     (comp (ref R3)
-      (value 1K)
+      (value 100)
       (footprint Resistors_SMD:R_0805_HandSoldering)
       (libsource (lib device) (part R))
       (sheetpath (names /) (tstamps /))
@@ -119,10 +119,10 @@
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive)))))
   (libraries
-    (library (logical device)
-      (uri "/Library/Application Support/kicad/library/device.lib"))
     (library (logical gtb)
-      (uri /Users/chinmay/Documents/Personal/Projects/GettingToBlinky4/gtb.lib)))
+      (uri /Users/chinmay/Documents/Personal/Projects/GettingToBlinky4/gtb.lib))
+    (library (logical device)
+      (uri "/Library/Application Support/kicad/library/device.lib")))
   (nets
     (net (code 1) (name "Net-(D1-Pad2)")
       (node (ref R3) (pin 2))
@@ -142,11 +142,12 @@
     (net (code 5) (name GND)
       (node (ref C1) (pin 2))
       (node (ref D1) (pin 1))
-      (node (ref U1) (pin 5))
-      (node (ref U1) (pin 1))
-      (node (ref BT1) (pin 2)))
+      (node (ref BT1) (pin 2))
+      (node (ref U1) (pin 1)))
     (net (code 6) (name /VDD)
       (node (ref BT1) (pin 1))
       (node (ref U1) (pin 8))
       (node (ref U1) (pin 4))
-      (node (ref R1) (pin 1)))))
+      (node (ref R1) (pin 1)))
+    (net (code 7) (name "Net-(U1-Pad5)")
+      (node (ref U1) (pin 5)))))

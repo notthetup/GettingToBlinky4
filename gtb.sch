@@ -49,7 +49,7 @@ L R R3
 U 1 1 573691BB
 P 6700 3750
 F 0 "R3" V 6780 3750 50  0000 C CNN
-F 1 "1K" V 6700 3750 50  0000 C CNN
+F 1 "100" V 6700 3750 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 6630 3750 50  0001 C CNN
 F 3 "" H 6700 3750 50  0000 C CNN
 	1    6700 3750
@@ -134,9 +134,6 @@ F 3 "" V 3750 3540 50  0000 C CNN
 	1    3750 3500
 	1    0    0    -1  
 $EndComp
-Connection ~ 5900 4700
-Wire Wire Line
-	5900 4400 5900 4700
 Connection ~ 5850 2600
 Wire Wire Line
 	4400 2250 5850 2250
@@ -150,7 +147,7 @@ Wire Wire Line
 	5500 2700 5500 2600
 Connection ~ 5550 4700
 Wire Wire Line
-	5550 4400 5550 4700
+	5550 4700 5550 4400
 Wire Wire Line
 	4400 4700 4400 4500
 Wire Wire Line
@@ -174,7 +171,7 @@ Wire Wire Line
 Wire Wire Line
 	4750 3850 4750 4100
 Wire Wire Line
-	4950 3850 4750 3850
+	4750 3850 4950 3850
 Connection ~ 4400 3250
 Wire Wire Line
 	4400 3100 4400 3600
