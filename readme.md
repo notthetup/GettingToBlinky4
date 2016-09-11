@@ -2,6 +2,8 @@
 
 This is a repository of (mostly) KiCad files created when following the online KiCad (and basic PCB design) tutorial by [Chris Gammel](chrisgammell.com). You can follow along the tutorial on [this YouTube playlist](https://www.youtube.com/watch?v=JN_Y93RTdSo&list=PLy2022BX6Eso532xqrUxDT1u2p4VVsg-q)
 
+![schematic](imgs/out.gif)
+
 ## PCB Design
 
 This design has a couple of changes compared to Chris's design. At the end of the tutorial series Chris realises that the resistance on his LED was too high, making the LED very dim. So I changed the value of R3 from 1KΩ to 100Ω.
